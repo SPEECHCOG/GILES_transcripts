@@ -13,5 +13,5 @@ Note: requires
 ### Main dependencies
 
 - tensorflow==2.12.1
-- numpy=1.23.5
+- numpy==1.23.5
 - tensorflow-text==2.12.0
