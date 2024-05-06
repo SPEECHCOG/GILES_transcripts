@@ -8,10 +8,15 @@ Program code for training a GPT-2 architecture language model (LM) from CHILDES 
 - `measure_unique_utterances.py`: Script for analyzing the proportion of unique utterances in the generated texts that never occur in CHILDES (or counting unique utterances in CHILDES).
 - `analyze_results.m`: Plotting the results based on the corpus analyses (MATLAB).
 
-Note: requires 
-
 ### Main dependencies
 
 - tensorflow==2.12.1
 - numpy==1.23.5
 - tensorflow-text==2.12.0
+
+### Instructions:
+
+- Download and prepare CHILDES transcript data into age-specific bins using `<missing>`
+- Run `GILES_main.py` to train the model and generate transcripts with it (after setting data paths inside the file).
+
+To analyze the data linguistically, you will need `<explanation missing>`, and then run `compare_datasets.py` of that test suite. 
