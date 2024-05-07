@@ -13,6 +13,7 @@ Program code for training a GPT-2 architecture language model (LM) from CHILDES 
 - tensorflow==2.12.1
 - numpy==1.23.5
 - tensorflow-text==2.12.0
+- stanza==1.8.2
 
 ### Instructions:
 
