@@ -21,7 +21,7 @@ Program code for training a GPT-2 architecture language model (LM) from CHILDES 
 ### Instructions:
 
 - Download CHILDES transcripts from NA English corpora using `get_childes_naenglish.R` as CSV-files (see the list of corpora in the script). The script uses `childesr` library (https://github.com/langcog/childesr). Setup a path to directory, where you want to store CSV-files.
-- prepare CHILDES transcript data into age-specific bins using `<missing>`
+- Extract CHILDES transcript data from downloaded CSV-files into age-specific bins using `childes_to_ao_dataset.py`
 - Run `GILES_main.py` to train the model and generate transcripts with it (after setting data paths inside the file).
 
 To analyze the data linguistically, you will need `<explanation missing>`, and then run `compare_datasets.py` of that test suite. 
