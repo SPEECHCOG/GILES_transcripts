@@ -10,11 +10,18 @@ Program code for training a GPT-2 architecture language model (LM) from CHILDES 
 - `childes_to_ao_dataset.py`: Extraction of CHILDES transcript data from downloaded CSV-files into age-specific bins.
 ### Main dependencies
 **Python**
-- numpy==1.23.5
-- scipy
+
+For LM training:
+
 - tensorflow==2.12.1
 - tensorflow-text==2.12.0
-- stanza==1.8.2
+
+For evaluation of the generated data:
+- evaluate (https://huggingface.co/docs/evaluate/en/installation)
+- matplotlib
+- pandas
+- scipy
+- stanza==1.8.2 (https://stanfordnlp.github.io/stanza/)
 
 **R**
 - childesr
@@ -23,6 +30,9 @@ Program code for training a GPT-2 architecture language model (LM) from CHILDES 
 
 - Download CHILDES transcripts from NA English corpora using `get_childes_naenglish.R` as CSV-files (see the list of corpora in the script). The script uses `childesr` library (https://github.com/langcog/childesr). Setup a path to directory, where you want to store CSV-files.
 - Extract CHILDES transcript data from downloaded CSV-files into age-specific bins using `childes_to_ao_dataset.py`
+```
+childes_to_ao_dataset.py --input-dir INPUT_DIR --output-dir OUTPUT_DIR
+```
 - Run `GILES_main.py` to train the model and generate transcripts with it (after setting data paths inside the file).
 
-To analyze the data linguistically, you will need `<explanation missing>`, and then run `compare_datasets.py` of that test suite. 
+To analyze the data linguistically, you will need to install all the required modules, and run `compare_datasets.py` of that test suite.
