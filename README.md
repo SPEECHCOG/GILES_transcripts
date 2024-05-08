@@ -7,6 +7,7 @@ Program code for training a GPT-2 architecture language model (LM) from CHILDES 
 - `measure_unique_utterances.py`: Script for analyzing the proportion of unique utterances in the generated texts that never occur in CHILDES (or counting unique utterances in CHILDES).
 - `analyze_results.m`: Plotting the results based on the corpus analyses (MATLAB).
 - `get_childes_naenglish.R`: The R script to download NA English corpora.
+- `childes_to_ao_dataset.py`: Extraction of CHILDES transcript data from downloaded CSV-files into age-specific bins.
 ### Main dependencies
 **Python**
 - numpy==1.23.5
