@@ -34,10 +34,8 @@ def main():
     args = parse_args(parser)
     input_dir = Path(args.input_dir)
     output_dir = Path(args.output_dir)
-
-    if not input_dir.is_dir():
-        print(f"No input directory: {input_dir}")
-        exit()
+    assert input_dir.is_dir(), f"No input directory: {input_dir}"
+    
     if args.clear_datasets:
         shutil.rmtree(output_dir, ignore_errors=True)
     os.makedirs(output_dir, exist_ok=True)
