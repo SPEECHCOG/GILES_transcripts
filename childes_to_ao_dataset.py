@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 @author: Daniil Kocharov (dan_ya)
-@description Parse AOCHILDES csv files and create .txt files for LM training through TensorFlow datasets.
+@description: Parse AOCHILDES csv files and create .txt files for LM training through TensorFlow datasets.
 """
 from argparse import ArgumentParser
 from collections import defaultdict
