@@ -34,5 +34,13 @@ For evaluation of the generated data:
 childes_to_ao_dataset.py --input-dir INPUT_DIR --output-dir OUTPUT_DIR
 ```
 - Run `GILES_main.py` to train the model and generate transcripts with it (after setting data paths inside the file).
+- Run `compare_datasets.py` to extract linguistic features for the given texts (or collections of texts):
+```
+compare_datasets.py --input-dir INPUT_DIR --output-dir OUTPUT_DIR --sample-data --analyze-data
+```
+The same code give a possibility to check statistical significance of feature changes along with (1) an age of a target child and (2) a number of words in a collection of texts corresponding to an age bin.
+```
+compare_datasets.py --input-dir INPUT_DIR --output-dir OUTPUT_DIR --sample-data --analyze-data --statistical_tests
+```
 
-To analyze the data linguistically, you will need to install all the required modules, and run `compare_datasets.py` of that test suite.
+- Run `analyze_results.m` to plot the feature comparison of the generated transcripts against original transcripts.
