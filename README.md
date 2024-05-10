@@ -17,11 +17,11 @@ For LM training:
 - tensorflow-text==2.12.0
 
 For evaluation of the generated data:
+- stanza (https://stanfordnlp.github.io/stanza/)
 - evaluate (https://huggingface.co/docs/evaluate/en/installation)
 - matplotlib
 - pandas
 - scipy
-- stanza==1.8.2 (https://stanfordnlp.github.io/stanza/)
 
 **R**
 - childesr
