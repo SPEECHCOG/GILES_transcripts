@@ -40,7 +40,7 @@ compare_datasets.py --input-dir INPUT_DIR --output-dir OUTPUT_DIR --sample-data 
 ```
 The same code give a possibility to check statistical significance of feature changes along with (1) an age of a target child and (2) a number of words in a collection of texts corresponding to an age bin.
 ```
-compare_datasets.py --input-dir INPUT_DIR --output-dir OUTPUT_DIR --sample-data --analyze-data --statistical_tests
+compare_datasets.py --input-dir INPUT_DIR --output-dir OUTPUT_DIR --sample-data --analyze-data --statistical_tests --plot_figures
 ```
 
 - Run `analyze_results.m` to plot the feature comparison of the generated transcripts against original transcripts.
